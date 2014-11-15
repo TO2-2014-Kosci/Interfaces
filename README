@@ -1,0 +1,25 @@
+W tym repozytorium będzie można znaleźć kod źródłowy interfejsów i protokołów oraz spakowany plik JAR, który będzie używany we wszystkich pozostałych komponentach.
+
+1. Praca nad interfejsami/protokołami
+2. Import do projektu
+
+-------
+
+1. Praca nad interfejsami/protokołami
+
+Jak wiadomo, wersja która będzie tu stworzona powinna być ostateczna, lecz nie ma żadnych szans żeby taka była. Mimo tego, każda zmiana może pociągać za sobą dość znaczące konsekwencje, więc trzeba będzie robić to dość ostrożnie.
+
+Propozycja sposobu pracy nad interfejsami bądź protokołami:
+    1. Gdy pojawi się potrzeba modyfikacji jakiegoś interfejsu/protokołu, któraś z zainteresowanych osób tworzy nowy branch, w którym zmiany się pojawią
+    2. Kod powinien być udokumentowany (javadoc)
+    3. Jeżeli klasy będące protokołami (te, które są przesyłane między komponentami) mają jakieś metody, tutaj powinny znaleźć się ich testy!
+    4. Dopiero gdy wszyscy zainteresowani zgodzą się co do nowego wyglądu interfejsu, zostanie on zmergowany do master branch
+    5. Należy też zaktualizować plik JAR.
+    6. O zmianie w jakiś sposób należy poinformować wszystkie komponenty, żeby każdy miał aktualny interfejs.
+
+2. Import do projektu
+
+Najpewniejszym sposobem będzie zaimportowanie (w sposób zależny od używanego IDE) pliku JAR, który znajduje się w tym repozytorium.
+
+Jeżeli korzystacie z IntelliJ, jest też inna metoda. Można ściągnąć całe repozytorium (dzięki czemu ewentualne aktualizacje również będą bardzo łatwe), a następnie dodać je jako bibliotekę do naszego projektu.
+Taka opcja znajduje się w Project Structure (ctrl+alt+shift+s) -> Libraries. Wystarczy dodać nową bibliotekę, a jako źródło ustawić folder z repozytorium.
