@@ -1,6 +1,6 @@
-package to2.dice.server;
+package to2.dice.messaging;
 
-import to2.dice.messaging.GameSettings;
+import to2.dice.common.GameSettings;
 
 /**
  * Created by Fan on 2014-11-17.

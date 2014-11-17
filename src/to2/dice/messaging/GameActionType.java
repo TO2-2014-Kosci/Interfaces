@@ -1,4 +1,4 @@
-package to2.dice.server;
+package to2.dice.messaging;
 
 /**
  * Created by Fan on 2014-11-16.

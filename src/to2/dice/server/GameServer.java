@@ -1,6 +1,6 @@
 package to2.dice.server;
 
-import to2.dice.messaging.GameState;
+import to2.dice.common.GameState;
 import to2.dice.to2.dice.controllers.GameController;
 
 /**

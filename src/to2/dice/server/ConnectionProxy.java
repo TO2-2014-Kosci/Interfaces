@@ -1,6 +1,7 @@
 package to2.dice.server;
 
-import to2.dice.messaging.*;
+import to2.dice.common.*;
+import to2.dice.messaging.Response;
 
 import java.util.List;
 

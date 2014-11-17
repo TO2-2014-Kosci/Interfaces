@@ -1,6 +1,6 @@
 package to2.dice.server;
 
-import to2.dice.messaging.GameState;
+import to2.dice.common.GameState;
 
 /**
  * Created by Fan on 2014-11-17.
