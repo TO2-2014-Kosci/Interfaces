@@ -19,7 +19,9 @@ public abstract class ConnectionProxy {
 
     public abstract List<GameInfo> getRoomList();
 
-    public abstract Response createGameRoom(GameSettings settings, String login);
+    public abstract Response createRoom(GameSettings settings, String login);
+
+    public abstract Response joinRoom(String roomName, String login);
 
     public abstract Response leaveRoom(String login);
 
