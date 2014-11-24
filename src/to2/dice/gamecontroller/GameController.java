@@ -6,6 +6,7 @@ import to2.dice.server.GameServer;
 
 public abstract class GameController {
     private GameServer server;
+    private GameInfo gameInfo;
 
     public GameController(GameServer server) {
         this.server = server;
@@ -13,5 +14,5 @@ public abstract class GameController {
 
     public abstract void handleGameAction(GameAction action);
 
-    public abstract GameInfo getGameInfo();
+    public GameInfo getGameInfo(){ return gameInfo; }
 }
