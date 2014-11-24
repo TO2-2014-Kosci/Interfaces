@@ -1,4 +1,4 @@
-package to2.dice.common;
+package to2.dice.game;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package to2.dice.common;
+package to2.dice.game;
 
 public enum BotLevel {
     LOW,

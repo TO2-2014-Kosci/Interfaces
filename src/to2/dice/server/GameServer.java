@@ -1,7 +1,7 @@
 package to2.dice.server;
 
-import to2.dice.common.GameState;
-import to2.dice.to2.dice.controllers.GameController;
+import to2.dice.game.GameState;
+import to2.dice.controllers.GameController;
 
 /**
  * Created by Fan on 2014-11-16.

@@ -1,14 +1,15 @@
-package to2.dice.common;
+package to2.dice.game;
 
 public class Player {
     private String name;
     private int score = 0;
-    private Dice dice = new Dice();
+    private Dice dice;
     private boolean isBot;
 
-    public Player(String name, boolean isBot) {
+    public Player(String name, boolean isBot, int diceNumber) {
         this.name = name;
         this.isBot = isBot;
+        dice = new Dice(diceNumber);
     }
 
     public String getName() {

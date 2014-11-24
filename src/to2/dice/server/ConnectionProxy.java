@@ -1,6 +1,8 @@
 package to2.dice.server;
 
-import to2.dice.common.*;
+import to2.dice.game.Dice;
+import to2.dice.game.GameInfo;
+import to2.dice.game.GameSettings;
 import to2.dice.messaging.Response;
 
 import java.util.List;
@@ -29,7 +31,7 @@ public abstract class ConnectionProxy {
 
     public abstract Response standUp(String login);
 
-    public abstract GameState reroll(Dice dice);
+    public abstract Response reroll(Dice dice);
 
     protected abstract boolean connect(Object serverLink);
 
