@@ -7,8 +7,8 @@ import to2.dice.messaging.Response;
 import to2.dice.server.GameServer;
 
 public abstract class GameController {
-    private GameServer server;
-    private GameSettings settings;
+    protected GameServer server;
+    protected GameSettings settings;
 
     public GameController(GameServer server, GameSettings settings) {
         this.server = server;
