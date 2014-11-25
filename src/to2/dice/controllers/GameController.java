@@ -9,10 +9,12 @@ import to2.dice.server.GameServer;
 public abstract class GameController {
     protected GameServer server;
     protected GameSettings settings;
+    protected String creator;
 
-    public GameController(GameServer server, GameSettings settings) {
+    public GameController(GameServer server, GameSettings settings, String creator) {
         this.server = server;
         this.settings = settings;
+        this.creator = creator;
     }
 
     public abstract Response handleGameAction(GameAction action);

@@ -10,8 +10,8 @@ import to2.dice.server.GameServer;
 public class NGameController extends GameController {
     private CountingStrategy strategy;
 
-    public NGameController(GameServer server, GameSettings settings, CountingStrategy strategy){
-        super(server, settings);
+    public NGameController(GameServer server, GameSettings settings, String creator, CountingStrategy strategy){
+        super(server, settings, creator);
         this.strategy = strategy;
     }
     @Override

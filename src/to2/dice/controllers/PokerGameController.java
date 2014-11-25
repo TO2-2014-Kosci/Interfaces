@@ -8,8 +8,8 @@ import to2.dice.server.GameServer;
 
 public class PokerGameController extends GameController {
 
-    public PokerGameController(GameServer server, GameSettings settings){
-        super(server, settings);
+    public PokerGameController(GameServer server, GameSettings settings, String creator){
+        super(server, settings, creator);
     }
 
     @Override
