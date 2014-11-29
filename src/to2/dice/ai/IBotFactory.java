@@ -4,5 +4,5 @@ import to2.dice.game.BotLevel;
 import to2.dice.game.GameType;
 
 public interface IBotFactory {
-    public AbstractBot createBot(BotLevel level, GameType gameType, int maxTime);
+    public Bot createBot(BotLevel level, GameType gameType, int maxTime);
 }
