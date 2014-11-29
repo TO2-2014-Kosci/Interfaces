@@ -10,4 +10,8 @@ public class RerollAction extends GameAction {
         super(type, sender);
         this.chosenDice = chosenDice;
     }
+
+    public boolean[] getChosenDice() {
+        return chosenDice;
+    }
 }

@@ -9,6 +9,7 @@ public class GameState {
     private Player currentPlayer = null;
     private int currentRound = 0;
 
+
     public List<Player> getPlayers() {
         return players;
     }
@@ -39,5 +40,22 @@ public class GameState {
 
     public void setCurrentRound(int currentRound) {
         this.currentRound = currentRound;
+    }
+
+
+    public int getPlayersNumber() {
+        return players.size();
+    }
+
+    public boolean isPlayerWithName(String playerName) {
+        for (Player player : players) {
+            if (player.getName().equals(playerName))
+                return true;
+        }
+        return false;
+    }
+
+    public void addPlayer(Player player) {
+        players.add(player);
     }
 }

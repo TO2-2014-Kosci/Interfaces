@@ -1,6 +1,8 @@
 package to2.dice.game;
 
+
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class GameSettings {
     private GameType gameType;
@@ -10,7 +12,7 @@ public class GameSettings {
     private int timeForMove;
     private int maxInactiveTurns;
     private int roundsToWin;
-    private Map<BotLevel, Integer> botsNumber;
+    private Map<BotLevel, Integer> botsNumbers;
 
     public GameSettings(GameType gameType, int diceNumber, String name, int maxHumanPlayers, int timeForMove, int maxInactiveTurns, int roundsToWin, Map<BotLevel, Integer> botsNumber) {
         this.gameType = gameType;
@@ -20,7 +22,7 @@ public class GameSettings {
         this.timeForMove = timeForMove;
         this.maxInactiveTurns = maxInactiveTurns;
         this.roundsToWin = roundsToWin;
-        this.botsNumber = botsNumber;
+        this.botsNumbers = botsNumber;
     }
 
     public GameType getGameType() {
@@ -51,7 +53,18 @@ public class GameSettings {
         return roundsToWin;
     }
 
-    public Map<BotLevel, Integer> getBotsNumber() {
-        return botsNumber;
+    public Map<BotLevel, Integer> getBotsNumbers() {
+        return botsNumbers;
+    }
+
+    public int getMaxPlayers() {
+
+        int totalNumber = 0;
+        for (Entry<BotLevel, Integer> entry : botsNumbers.entrySet()) {
+            totalNumber += entry.getValue();
+        }
+        totalNumber += maxHumanPlayers;
+
+        return totalNumber;
     }
 }
