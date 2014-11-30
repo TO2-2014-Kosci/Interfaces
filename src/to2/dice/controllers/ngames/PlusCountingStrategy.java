@@ -1,13 +1,14 @@
-package to2.dice.controllers;
+package to2.dice.controllers.ngames;
 
+import to2.dice.controllers.ngames.CountingStrategy;
 import to2.dice.game.Dice;
 
-public class MulCountingStrategy implements CountingStrategy {
+public class PlusCountingStrategy implements CountingStrategy {
     @Override
     public int countPoints(Dice dice) {
         int result = 0;
         for(int i: dice.getValue()){
-            result *= i;
+            result += i;
         }
         return result;
     }

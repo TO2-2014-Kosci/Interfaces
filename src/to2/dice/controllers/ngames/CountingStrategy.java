@@ -1,4 +1,4 @@
-package to2.dice.controllers;
+package to2.dice.controllers.ngames;
 
 import to2.dice.game.Dice;
 
