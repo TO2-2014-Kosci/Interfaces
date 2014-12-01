@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.concurrent.TimeoutException;
 
 /**
- * Created by Fan on 2014-11-17.
+ * @author Fan
+ * @version 0.3
  */
 public abstract class ConnectionProxy {
 
