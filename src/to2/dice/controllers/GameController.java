@@ -13,6 +13,7 @@ public abstract class GameController {
     protected GameServer server;
     protected GameSettings settings;
     protected String creator;
+    protected GameState state;
 
     protected GameState state;
     protected List<String> observers;
@@ -23,9 +24,9 @@ public abstract class GameController {
         this.creator = creator;
     }
 
-    public abstract Response handleGameAction(GameAction action);
+    public GameInfo getGameInfo(){ return new GameInfo(settings, state); }
 
-    public GameInfo getGameInfo() {
+    public abstract Response handleGameAction(GameAction action);
         return new GameInfo(settings, state);
     };
 }
