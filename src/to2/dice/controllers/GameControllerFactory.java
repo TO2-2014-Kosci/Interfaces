@@ -7,7 +7,7 @@ import to2.dice.game.GameType;
 import to2.dice.server.GameServer;
 
 public class GameControllerFactory {
-    public GameController createGameControler(GameServer server, GameSettings settings, String creator){
+    public static GameController createGameControler(GameServer server, GameSettings settings, String creator){
         GameController gameController = null;
         GameType type = settings.getGameType();
         switch (type){
@@ -21,7 +21,7 @@ public class GameControllerFactory {
                 gameController = new PokerGameController(server, settings, creator);
                 break;
             default:
-//THROW SOMETHING HERE
+        //THROW SOMETHING HERE
                 break;
         }
         return gameController;
