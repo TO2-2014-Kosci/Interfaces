@@ -13,7 +13,6 @@ public abstract class GameController {
     protected GameServer server;
     protected GameSettings settings;
     protected String creator;
-    protected GameState state;
 
     protected GameState state;
     protected List<String> observers;
@@ -27,6 +26,4 @@ public abstract class GameController {
     public GameInfo getGameInfo(){ return new GameInfo(settings, state); }
 
     public abstract Response handleGameAction(GameAction action);
-        return new GameInfo(settings, state);
-    };
 }
