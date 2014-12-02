@@ -33,7 +33,7 @@ public abstract class ConnectionProxy {
 
     public abstract Response standUp(String login) throws TimeoutException;
 
-    public abstract Response reroll(boolean[] dice) throws TimeoutException;
+    public abstract Response reroll(boolean[] dice, String login) throws TimeoutException;
 
     protected abstract boolean connect(Object serverLink);
 
