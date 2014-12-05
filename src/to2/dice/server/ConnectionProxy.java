@@ -5,6 +5,7 @@ import to2.dice.game.GameInfo;
 import to2.dice.game.GameSettings;
 import to2.dice.messaging.Response;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 
@@ -14,7 +15,11 @@ import java.util.concurrent.TimeoutException;
  */
 public abstract class ConnectionProxy {
 
+    protected List<ServerMessageListener> listeners;
+
     public ConnectionProxy(Object serverLink, ServerMessageListener listener) {
+        listeners = new ArrayList<ServerMessageListener>();
+
         this.addServerMessageListener(listener);
         this.connect(serverLink);
     }
@@ -37,5 +42,7 @@ public abstract class ConnectionProxy {
 
     protected abstract boolean connect(Object serverLink);
 
-    public abstract void addServerMessageListener(ServerMessageListener listener);
+    public void addServerMessageListener(ServerMessageListener listener) {
+        listeners.add(listener);
+    }
 }
