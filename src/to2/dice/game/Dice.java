@@ -9,11 +9,11 @@ public class Dice {
         dice = new int[diceNumber];
     }
 
-    public int[] getDice(){
+    public int[] getValues(){
         return dice;
     }
 
-    public void setDice(int[] dice) {
+    public void setValues(int[] dice) {
         this.dice = dice;
     }
 }
