@@ -2,18 +2,18 @@ package to2.dice.game;
 
 public class Dice {
     private int diceNumber;
-    private int[] dice;
+    private int[] diceArray;
 
     public Dice(int diceNumber){
         this.diceNumber = diceNumber;
-        dice = new int[diceNumber];
+        diceArray = new int[diceNumber];
     }
 
-    public int[] getDice(){
-        return dice;
+    public int[] getDiceArray(){
+        return diceArray;
     }
 
-    public void setDice(int[] dice) {
-        this.dice = dice;
+    public void setDiceArray(int[] diceArray) {
+        this.diceArray = diceArray;
     }
 }
