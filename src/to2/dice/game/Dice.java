@@ -9,6 +9,11 @@ public class Dice {
         diceArray = new int[diceNumber];
     }
 
+    public Dice(int[] diceArray){
+        this.diceNumber = diceArray.length;
+        this.diceArray = diceArray;
+    }
+
     public int[] getDiceArray(){
         return diceArray;
     }
